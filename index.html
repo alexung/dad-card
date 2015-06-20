@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="dadApp">
   <head>
-    <title>Dad Card</title>
+    <title>Help & Training Landing Page Sandbox</title>
+    <!-- STYLESHEETS -->
     <link rel="stylesheet" type="type/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
     <link rel="stylesheet" type="type/css" href="assets/css/styles.css" />
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+
   </head>
-  <body>
+  <body ng-controller="dadCard2015Ctrl">
+    <div id="main">
+      <div ng-view></div>
+    </div>
+
+    <!-- ANGULAR SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.min.js"></script>
+
+    <!-- **MY ANGULAR** -->
+    <script src="app/app.module.js"></script>
+    <script src="app/app.routes.js"></script>
+
+    <!--CONTROLLERS-->
+    <script src="app/components/card-2015/controllers/dadCard2015Controller.js"></script>
 
   </body>
 </html>
